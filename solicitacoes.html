@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon.png" type="image/png">
+    <title>Solicitações - Sistema de Materiais</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Sistema de Compra</h1>
+            <p id="nomeDoGrupo" class="sub">Carregando...</p>
+        </div>
+
+        <div class="export-bar">
+                <button id="exportCsvBtn" class="btn-export">
+                    <i class="fas fa-file-csv"></i> Exportar para CSV
+                </button>
+            </div>
+        </div>
+
+        <a href="home.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Voltar para Grupos
+        </a>
+
+        <div class="grid">
+            
+            <div class="card form-card">
+                <h2>Nova Solicitação</h2>
+                <form id="solicitacaoForm">
+                    
+                    <input type="hidden" id="editId">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" placeholder="Ex: Lorenzo Pontes" required>
+
+                    <label for="setor">Setor</label>
+                    <input type="text" id="setor" placeholder="Ex: TI" required>
+
+                    <label for="item">Item Solicitado</label>
+                    <input type="text" id="item" placeholder="Ex: Pacote de 500 folhas A4" required>
+
+                    <label for="justificativa">Justificativa</label>
+                    <textarea id="justificativa" placeholder="Ex: Para impressão de relatórios mensais"></textarea>
+
+                    <label for="link">Link do Material (Opcional)</label>
+                    <input type="url" id="link" placeholder="https://exemplo.com/produto">
+
+                    <label for="local">Local de Destino</label>
+                    <select id="local" required>
+                        <option value="" disabled selected>Selecione um local...</option>
+                        <option value="Maple Bear AF">Maple Bear AF</option>
+                        <option value="Maple Bear BV">Maple Bear BV</option>
+                        <option value="English Education AF">English Education AF</option>
+                        <option value="English Education BV">English Education BV</option>
+                        <option value="Administrativo">Administrativo</option>
+                    </select>
+
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                    </button>
+                </form>
+            </div>
+
+            <div class="card list-card">
+    <h2>Solicitações Recentes</h2>
+    
+    <div class="filter-controls">
+        <input type="search" id="searchBar" placeholder="Buscar por item, solicitante ou setor...">
+        <div class="filter-buttons">
+            <button class="btn-filter active" data-status="todos">Todos</button>
+            <button class="btn-filter" data-status="pendente">Pendentes</button>
+            <button class="btn-filter" data-status="aprovado">Aprovados</button>
+            <button class="btn-filter" data-status="comprado">Comprados</button>
+            <button class="btn-filter" data-status="entregue">Entregues</button>
+            <button class="btn-filter" data-status="rejeitado">Rejeitados</button>
+        </div>
+    </div>
+    <div id="listaSolicitacoes">
+        <p id="mensagemSemSolicitacoes">Nenhuma solicitação neste grupo ainda.</p>
+        
+        <p id="mensagemSemResultados" style="display: none; text-align: center; padding: 40px; color: var(--cor-texto-suave); font-style: italic; font-size: 1.1rem;">
+            Nenhuma solicitação encontrada com os filtros atuais.
+        </p>
+    </div>
+</div>
+
+        </div> </div> <script src="js/script.js"></script>
+</body>
+</html>

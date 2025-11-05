@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon.png" type="image/png">
+    <title>Grupos - Sistema de Solicitação</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1> <img src="img/logo sistema solicitações.png" alt="Logo ABA" class="logo"></h1>
+            <p class="sub">Computer Center</p>
+        </div>
+
+        <div class="card">
+            <h2>Criar Novo Grupo</h2>
+            <form id="novoGrupoForm">
+                <input type="text" id="nomeGrupoInput" placeholder="Ex: Solicitações de Outubro" required>
+                <button type="submit">Criar Grupo</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Grupos Existentes</h2>
+            <div id="listaDeGrupos">
+                </div>
+            <p id="mensagemSemGrupos">Nenhum grupo criado ainda.</p>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
