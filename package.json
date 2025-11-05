@@ -1,0 +1,24 @@
+{
+  "name": "sistema-de-solicitacoes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzom351/Sistema-de-Solicita-es.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lorenzom351/Sistema-de-Solicita-es/issues"
+  },
+  "homepage": "https://github.com/lorenzom351/Sistema-de-Solicita-es#readme",
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
