@@ -1,0 +1,6 @@
+# Ignora a pasta de módulos do Node
+node_modules
+
+# Ignora arquivos de senhas (vamos usar no futuro)
+.env
+.env.local
