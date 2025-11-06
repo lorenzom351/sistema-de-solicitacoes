@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Você pode definir usuários e senhas fixos aqui para demonstração
     // Em um sistema real, isso seria verificado em um servidor/banco de dados
     const validUsers = {
-        'admin': 'admin123',
-        'joao': 'senha123'
+        'financeiro': 'financeiro1510!',
+        'informatica': 'abacc1510'
     };
 
     loginForm.addEventListener('submit', (e) => {
